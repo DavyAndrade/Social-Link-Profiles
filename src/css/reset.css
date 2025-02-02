@@ -1,0 +1,73 @@
+/* Reset básico para remover margens e preenchimentos padrão */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definir elementos HTML5 como block-level */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Configurações básicas de tipografia e layout */
+html {
+    height: 100%;
+    line-height: 1.5;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    min-height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, 
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+/* Reset de elementos de formulário */
+button, input, optgroup, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+/* Remover estilos padrão de listas */
+ul, ol {
+    list-style: none;
+}
+
+/* Elementos de mídia */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* Herança de tipografia para elementos interativos */
+button, input, select, textarea {
+    font: inherit;
+}
+
+/* Remover decoração de link padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Reset de tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Prevenir problemas com elementos ocultos */
+[hidden] {
+    display: none !important;
+}
+
+/* Remover outline padrão (adicionar estilos de focus manualmente) */
+:focus {
+    outline: 0;
+}
